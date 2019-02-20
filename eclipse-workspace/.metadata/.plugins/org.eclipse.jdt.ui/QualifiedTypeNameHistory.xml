@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.xml.xquery.XQDataSource"/>
+<fullyQualifiedTypeName name="net.xqj.basex.BaseXXQDataSource"/>
+<fullyQualifiedTypeName name="javax.xml.xquery.XQConnection"/>
+<fullyQualifiedTypeName name="javax.xml.namespace.QName"/>
+</qualifiedTypeNameHistroy>
