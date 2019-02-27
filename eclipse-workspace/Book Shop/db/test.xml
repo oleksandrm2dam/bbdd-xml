@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<item>Hola</item>
+	<item>Hola2</item>
+	<nodo>
+		<adios>Adios</adios>
+		<adios>Adios22</adios>
+		<adios>Adios333</adios>
+
+	</nodo>
+</root>

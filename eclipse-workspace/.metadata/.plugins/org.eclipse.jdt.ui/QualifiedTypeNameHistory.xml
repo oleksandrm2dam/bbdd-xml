@@ -4,4 +4,18 @@
 <fullyQualifiedTypeName name="net.xqj.basex.BaseXXQDataSource"/>
 <fullyQualifiedTypeName name="javax.xml.xquery.XQConnection"/>
 <fullyQualifiedTypeName name="javax.xml.namespace.QName"/>
+<fullyQualifiedTypeName name="org.basex.query.QueryException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.basex.core.Context"/>
+<fullyQualifiedTypeName name="org.basex.core.BaseXException"/>
+<fullyQualifiedTypeName name="org.basex.core.cmd.XQuery"/>
+<fullyQualifiedTypeName name="org.basex.query.value.Value"/>
+<fullyQualifiedTypeName name="org.basex.io.serial.Serializer"/>
+<fullyQualifiedTypeName name="org.basex.core.cmd.CreateDB"/>
+<fullyQualifiedTypeName name="org.basex.core.cmd.Close"/>
+<fullyQualifiedTypeName name="org.basex.core.cmd.CreateIndex"/>
+<fullyQualifiedTypeName name="org.basex.core.cmd.Open"/>
+<fullyQualifiedTypeName name="org.basex.query.QueryProcessor"/>
+<fullyQualifiedTypeName name="org.basex.query.iter.Iter"/>
+<fullyQualifiedTypeName name="org.basex.query.value.item.Item"/>
 </qualifiedTypeNameHistroy>
