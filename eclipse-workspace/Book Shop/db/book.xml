@@ -1,0 +1,21 @@
+
+<root>
+	<book>
+		<isbn>isbn1</isbn>
+		<title>libro1</title>
+		<author>autor1</author>
+		<publisher>Editorial1</publisher>
+		<edition>edicion4</edition>
+		<publishingDate>22/04/2010</publishingDate>
+		<price>34</price>
+	</book>
+	<book>
+		<isbn>isbn2</isbn>
+		<title>libro2</title>
+		<author>autor2</author>
+		<publisher>Editorial2</publisher>
+		<edition>edicion1</edition>
+		<publishingDate>10/11/2015</publishingDate>
+		<price>80</price>
+	</book>
+</root>
