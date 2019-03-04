@@ -94,9 +94,12 @@ public class ClientControl {
 	
 	public void insertClient(Client client) {
 		try {
-			String query = "let $up := <client>" + "<dni>" + client.getDni() + "</dni>" + " <name>"
-					+ client.getName() + "</name>" + "<surnames>" + client.getSurnames() + "</surnames>"
-					+ " </client> " + "return insert node $up as last into doc('DBExample')//clients ";
+			String query = "let $up := <client>" 
+					+ "<dni>" + client.getDni() + "</dni>" 
+					+ "<name>" + client.getName() + "</name>" 
+					+ "<surnames>" + client.getSurnames() + "</surnames>"
+					+ " </client> " 
+					+ "return insert node $up as last into doc('DBExample')//clients ";
 			new XQuery(query).execute(mainBook.context);
 		} catch (BaseXException e) {
 			e.printStackTrace();
@@ -115,9 +118,12 @@ public class ClientControl {
 	
 	public void updateClient(Client client) {
 		try {
-			String query = "let $up := <client>" + "<dni>" + client.getDni() + "</dni>" + " <name>"
-					+ client.getName() + "</name>" + "<surnames>" + client.getSurnames() + "</surnames>"
-					+ " </client> " + "for $i in doc('DBExample')//clients/client where $i/dni = '" + client.getDni() + "' "
+			String query = "let $up := <client>" 
+					+ "<dni>" + client.getDni() + "</dni>" 
+					+ " <name>" + client.getName() + "</name>" 
+					+ "<surnames>" + client.getSurnames() + "</surnames>"
+					+ " </client> " 
+					+ "for $i in doc('DBExample')//clients/client where $i/dni = '" + client.getDni() + "' "
 					+ " return replace node $i with $up";
 			new XQuery(query).execute(mainBook.context);
 		} catch (BaseXException e) {
