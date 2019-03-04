@@ -2,27 +2,19 @@ package entities;
 
 public class Client {
 
-	private int id;
 	private String dni;
 	private String name;
 	private String surnames;
 	
 	public Client(String dni, String name, String surnames) {
-	this.dni = dni;
-	this.name = name;
-	this.surnames = surnames;
+		super();
+		this.dni = dni;
+		this.name = name;
+		this.surnames = surnames;
 	}
-
+	
 	public Client() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
+		
 	}
 
 	public String getDni() {
@@ -48,7 +40,10 @@ public class Client {
 	public void setSurnames(String surnames) {
 		this.surnames = surnames;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Client [dni=" + dni + ", name=" + name + ", surnames=" + surnames + "]";
+	}
 	
 }
