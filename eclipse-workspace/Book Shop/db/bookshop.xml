@@ -1,0 +1,41 @@
+
+<root>
+<books>
+	<book>
+		<isbn>isbn1</isbn>
+		<title>libro1</title>
+		<author>autor1</author>
+		<publisher>Editorial1</publisher>
+		<edition>edicion4</edition>
+		<publishingDate>22/04/2010</publishingDate>
+		<price>34</price>
+	</book>
+</books>
+<orders>
+	<order>
+		<orderID>1</orderID>
+		<clientDNI>dni1</clientDNI>
+		<date>22/06/2019</date>
+		<isbns>
+			<isbn>isbn1</isbn>
+			<isbn>isbn2</isbn>
+		</isbns>
+	</order>
+</orders>
+<stocks>
+	<stock>
+		<isbn>isbn1</isbn>
+		<codWarehouse>1</codWarehouse>
+		<quantity>10</quantity>
+	</stock>
+</stocks>
+<warehouses>
+	<warehouse>
+		<codWarehouse>1</codWarehouse>
+		<name>Warehouse1</name>
+		<population>Population1</population>
+		<telephone>Telephone1</telephone>
+		<email>Email1</email>
+	</warehouse>
+</warehouses>
+</root>
