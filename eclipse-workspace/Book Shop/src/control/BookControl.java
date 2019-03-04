@@ -19,6 +19,11 @@ import main.mainBook;
 public class BookControl {
 
 	static final String DB_PATH = "book.xml";
+	//Variables usadas para pasar como prámetro field en el método selectBook(String fiel, String value)
+	public static final String ISBN_FIELD = "$i/isbn";
+	public static final String TITLE_FIELD ="$i/title";
+	public static final String AUTHOR_FIELD="$i/author";
+	
 	
 	public Book selectBookISBN(String isbn) {
 		    Book book = new Book();
@@ -41,6 +46,32 @@ public class BookControl {
 		 }finally {
 		 }
 		return book;
+	}
+	
+	//Esta función sirve para buscar libros según el campo que se pase como parámetro
+	//Esta es la función que deberían tener todos los demás clases
+	public ArrayList<Book> selectBook(String field, String value) {
+		    ArrayList<Book> books = new ArrayList<Book>();
+		 try {
+	    String queryArray = "for $i in doc('DBExample')//books/book "
+	    				  + "where " + field + " = '" + value + "' "
+		+ "let $array := array{(data($i/isbn), data($i/title), data($i/author), data($i/publisher), data($i/edition), data($i/publishingDate), data($i/price))}"
+		+ "return $array";
+	    QueryProcessor proc = new QueryProcessor(queryArray, mainBook.context);
+	    //Conseguir iterador para iterar por cada resultado de la query
+	    Iter itr = proc.iter();
+	    Item item;
+	    while((item = itr.next())!= null) {
+		Book book = new Book();
+	    	loadBook(book, item);
+		books.add(book);
+	    }
+	    proc.close();
+		 }catch(QueryException e) {
+			 e.printStackTrace();
+		 }finally {
+		 }
+		return books;
 	}
 	
 	public ArrayList<Book> selectAllBooks(){
